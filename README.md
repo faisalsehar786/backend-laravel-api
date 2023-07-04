@@ -6,8 +6,13 @@ Follow these steps to get this project live
 
 ```
 git clone https://github.com/username/laravel-blog-api.git
+
 cd laravel-blog-api
 composer install
+
+All collection of end points in the folder postmanendpoints
+
+the data base for test the file in floder   mysqldatabase
 
 ```
 ## Configure your .env file
