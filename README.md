@@ -5,7 +5,7 @@ This is a blog rest API project including blog features like category,article,au
 Follow these steps to get this project live
 
 ```
-git clone https://github.com/tanvirasifkhan/laravel-blog-api.git
+git clone https://github.com/username/laravel-blog-api.git
 cd laravel-blog-api
 composer install
 
@@ -20,7 +20,7 @@ DB_DATABASE=db_name
 DB_USERNAME=db_username
 DB_PASSWORD=db_password
 
-```
+```  
 
 ## Final steps
 
@@ -28,6 +28,9 @@ DB_PASSWORD=db_password
 php artisan migrate
 php artisan key:generate
 http://localhost:8000
+
+api end point
+http://localhost:8000/api
 
 ```
 ## Features
@@ -57,7 +60,8 @@ http://localhost:8000
         3 ) Remove -> /api/article/{id}/remove 
         4 ) Show -> /api/article/{id}/show 
         5 ) All -> /api/articles
-        6 ) Search -> /api/article/{keyword}/search
+        6 ) Search -> /api/article/search?keyword=test&date=2023-07-01&order=desc    its local db
+         7)  Search->/api/article/search_article_from_multi_sources?keyword=tesla&date_from=2014-01-01&source=&category=&date_to=2014-01-01&page=1   its from private apis 
         
     3. Author
         1 ) Register -> /api/register 
@@ -77,8 +81,7 @@ php artisan tinker
 factory(App\ModelName::class,number_of_column)->create()
 ```
 
-To test this API project you can use [Postman](https://www.postman.com/) application.For authorization purpose you need to add below headers
-```
+
 ‘headers’ => [
     ‘Accept’ => ‘application/json’,
     ‘Authorization’ => ‘Bearer ‘.$accessToken,
