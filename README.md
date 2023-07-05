@@ -119,5 +119,13 @@ Boom! access `project.local` on your favorite browser
 
 ## Questions and Improvements
 
+## Db
+  MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: newsblog
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+
 
 
